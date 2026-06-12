@@ -255,18 +255,6 @@ Interactive charts and metrics provide insights into the movie dataset.
 
 ---
 
-## 📸 Screenshots
-
-### Home Dashboard
-
-![Home Dashboard](<Screenshot 2026-06-12 172507.png>)
-
-### Recommendation Results
-
-![Recommendation According to Search](<Screenshot 2026-06-12 172701.png>)
-
----
-
 ## 🔮 Future Enhancements
 
 * TMDB API Integration for Movie Posters
@@ -297,16 +285,6 @@ Suitable as a **B.Tech CSE Minor Project**.
 
 **Sagar Raj Sharma**
 
-**Roll Number:** 24052503
-
-**B.Tech Computer Science and Engineering**
-
-**KIIT University**
-
 **GitHub:** https://github.com/sagar0149
 
 ---
-
-## 📜 License
-
-This project is developed for academic and educational purposes only.
