@@ -1,143 +1,209 @@
-# 🎬 Movie Recommendation Engine Using Machine Learning
+# 🎬 Movie Recommendation Engine
 
-## 📌 Project Status
-
-✅ Completed and Functional
-
-🎓 Developed as a Minor Project for B.Tech Computer Science and Engineering
+An intelligent movie recommendation system that uses **Machine Learning** and **Content-Based Filtering** to suggest movies based on user preferences and movie similarity.
 
 ---
 
-# 📖 Project Overview
+## 🚀 Project Overview
 
-The Movie Recommendation Engine is a machine learning-based application developed to provide personalized movie recommendations to users. The system analyzes movie genres and user preferences to suggest relevant movies based on similarity. It utilizes Content-Based Filtering techniques along with TF-IDF Vectorization and Cosine Similarity to generate accurate recommendations.
+Modern streaming platforms contain thousands of movies, making it difficult for users to discover content that matches their interests.
 
-The project uses the MovieLens dataset and provides an interactive dashboard built using Streamlit. Users can select a movie and receive recommendations instantly. The dashboard also provides visual insights into movie genres and rating distributions.
+The **Movie Recommendation Engine** analyzes movie genres and characteristics to recommend similar movies using machine learning techniques. The system provides personalized suggestions and visual analytics through an interactive dashboard.
 
-This project demonstrates the practical application of machine learning algorithms in recommendation systems, similar to those used by streaming platforms such as Netflix, Amazon Prime Video, and Disney+.
+This project demonstrates the practical application of:
 
----
-
-# 🎯 Objectives
-
-* Develop an intelligent movie recommendation system.
-* Apply machine learning techniques to real-world datasets.
-* Implement a content-based recommendation algorithm.
-* Analyze movie data and user rating information.
-* Create an interactive dashboard for recommendations and visualizations.
-* Gain practical experience in data preprocessing, machine learning, and data analytics.
+* Machine Learning
+* Recommendation Systems
+* Data Analytics
+* Data Visualization
+* Natural Language Processing Concepts
 
 ---
 
-# 🚀 Features
+## 🎯 Problem Statement
 
-* Movie recommendation based on user-selected movies.
-* Content-Based Filtering using TF-IDF Vectorization.
-* Similarity calculation using Cosine Similarity.
-* Interactive Streamlit dashboard.
-* Genre distribution analysis.
-* Rating distribution visualization.
-* Dataset statistics and insights.
-* User-friendly interface.
+Users often face difficulty finding movies that match their interests due to the vast amount of content available on streaming platforms.
+
+Challenges include:
+
+* Large movie collections
+* Time-consuming manual search
+* Difficulty discovering similar content
+* Lack of personalized recommendations
+* Information overload
+
+This project addresses these challenges by automatically recommending relevant movies based on content similarity.
 
 ---
 
-# 🛠️ Technologies Used
+## ✨ Features
 
-## Programming Language
+### 🎬 Movie Recommendation
+
+Recommend movies based on similarity in genres and movie attributes.
+
+### 🤖 Content-Based Filtering
+
+Uses machine learning techniques to identify movies with similar characteristics.
+
+### 🔍 Movie Search
+
+Allows users to search and select movies from the dataset.
+
+### 📊 Interactive Dashboard
+
+Includes:
+
+* Total Movies Available
+* Total Ratings
+* Average Rating
+* Genre Distribution
+* Rating Distribution
+
+### 📈 Data Visualization
+
+Provides interactive charts and insights for better understanding of movie data.
+
+### ⚡ Real-Time Recommendations
+
+Instantly generates recommendations based on user selection.
+
+---
+
+## 🏗️ System Architecture
+
+Movie Dataset
+
+↓
+
+Data Collection
+
+↓
+
+Data Preprocessing
+
+↓
+
+Feature Extraction
+
+↓
+
+TF-IDF Vectorization
+
+↓
+
+Cosine Similarity
+
+↓
+
+Recommendation Engine
+
+↓
+
+Dashboard Visualization
+
+↓
+
+User Recommendations
+
+---
+
+## 🛠️ Tech Stack
+
+### Programming Language
 
 * Python
 
-## Libraries and Frameworks
-
-* Streamlit
-* Pandas
-* NumPy
-* Plotly
-* Scikit-Learn
-* Matplotlib
-
-## Dataset
-
-* MovieLens Dataset
-
-## Machine Learning Techniques
+### Machine Learning
 
 * Content-Based Filtering
 * TF-IDF Vectorization
 * Cosine Similarity
 
----
+### Data Processing
 
-# 📋 Requirements
+* Pandas
+* NumPy
 
-Install the following dependencies:
+### Visualization
 
-```text
-streamlit
-pandas
-numpy
-plotly
-scikit-learn
-scikit-surprise
-requests
-```
+* Plotly
+* Matplotlib
 
-Or install using:
+### Dashboard
 
-```bash
-pip install -r requirements.txt
-```
+* Streamlit
+
+### Version Control
+
+* Git
+* GitHub
 
 ---
 
-# 📂 Project Structure
+## 📈 Dashboard Components
+
+* Movie Selection Panel
+* Recommendation Results
+* Total Movies Metric
+* Total Ratings Metric
+* Average Rating Metric
+* Genre Distribution Chart
+* Rating Distribution Chart
+* Dataset Insights
+
+---
+
+## 📂 Project Structure
 
 ```text
 Movie-Recommendation-System/
-│
+
+├── dashboard/
+│   ├── analytics.py
+│   └── charts.py
+
 ├── dataset/
 │   ├── movies.csv
 │   └── ratings.csv
-│
+
 ├── models/
 │   ├── content_based.py
 │   ├── collaborative.py
 │   └── hybrid.py
-│
-├── dashboard/
-│   ├── analytics.py
-│   └── charts.py
-│
+
 ├── app.py
+
 ├── requirements.txt
+
 ├── README.md
+
 └── .gitignore
 ```
 
 ---
 
-# ⚙️ Installation Guide
+## ⚙️ Installation
 
-## Step 1: Clone the Repository
+Clone the repository:
 
 ```bash
 git clone https://github.com/sagar0149/Movie-Recommendation-System.git
 ```
 
-## Step 2: Navigate to the Project Folder
+Navigate into the project:
 
 ```bash
 cd Movie-Recommendation-System
 ```
 
-## Step 3: Install Required Dependencies
+Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## Step 4: Run the Application
+Run the application:
 
 ```bash
 streamlit run app.py
@@ -145,113 +211,102 @@ streamlit run app.py
 
 ---
 
-# 📊 Dataset Information
+## 📊 Dataset Information
 
-This project uses the MovieLens Dataset, which contains:
+This project uses the MovieLens Dataset containing:
 
 * Movie IDs
 * Movie Titles
 * Genres
-* User IDs
-* Movie Ratings
+* User Ratings
+* Rating Information
 
-The MovieLens dataset is widely used in recommendation system research and machine learning applications.
-
----
-
-# 🧠 Working Methodology
-
-## 1. Data Collection
-
-Movie and rating data are collected from the MovieLens dataset.
-
-## 2. Data Preprocessing
-
-* Handling missing values.
-* Cleaning genre information.
-* Preparing data for machine learning algorithms.
-
-## 3. Feature Extraction
-
-Movie genres are transformed into numerical representations using TF-IDF Vectorization.
-
-## 4. Similarity Calculation
-
-Cosine Similarity is used to determine the similarity between movies.
-
-## 5. Recommendation Generation
-
-Movies with the highest similarity scores are recommended to users based on their selected movie.
-
-## 6. Dashboard Visualization
-
-Interactive charts and statistics are displayed to provide insights into movie genres and ratings.
+The MovieLens dataset is one of the most widely used datasets for recommendation system research and development.
 
 ---
 
-# 📈 Dashboard Analytics
+## 🧠 Working Methodology
 
-The dashboard provides:
+### 1. Data Collection
 
-* Total Movies Available
-* Total Ratings Collected
-* Average Rating
-* Genre Distribution
-* Rating Distribution
-* Most Popular Genres
-* Dataset Insights
+Movie data and user ratings are collected from the MovieLens dataset.
+
+### 2. Data Preprocessing
+
+* Cleaning movie data
+* Handling missing values
+* Preparing features for machine learning
+
+### 3. Feature Extraction
+
+Movie genres are transformed into numerical vectors using TF-IDF Vectorization.
+
+### 4. Similarity Calculation
+
+Cosine Similarity is used to determine similarity between movies.
+
+### 5. Recommendation Generation
+
+Movies with the highest similarity scores are recommended to users.
+
+### 6. Dashboard Visualization
+
+Interactive charts and metrics provide insights into the movie dataset.
 
 ---
 
-# 📸 Screenshots
+## 📸 Screenshots
 
 ### Home Dashboard
 
-![Home Dashboard](image.png)
+![Home Dashboard](<Screenshot 2026-06-12 172507.png>)
 
 ### Recommendation Results
 
-![Recommendation](image-1.png)
+![Recommendation According to Search](<Screenshot 2026-06-12 172701.png>)
 
 ---
 
-# 🎓 Learning Outcomes
+## 🔮 Future Enhancements
 
-Through this project, the following concepts were explored:
+* TMDB API Integration for Movie Posters
+* Collaborative Filtering Implementation
+* Hybrid Recommendation System
+* User Authentication
+* Personalized Watchlists
+* Deep Learning-Based Recommendations
+* Mobile Application Development
 
-* Data Cleaning and Preprocessing
-* Machine Learning Fundamentals
+---
+
+## 🎓 Academic Relevance
+
+This project demonstrates concepts from:
+
+* Machine Learning
 * Recommendation Systems
+* Data Analytics
 * Data Visualization
-* Dashboard Development
-* Python Programming
-* Real-world Dataset Analysis
+* Software Engineering
+
+Suitable as a **B.Tech CSE Minor Project**.
 
 ---
 
-# 📋 Results
-
-The system successfully recommends movies based on similarity between movie genres and user-selected preferences. The recommendation engine demonstrates the effectiveness of machine learning techniques in generating relevant movie suggestions and improving user experience.
-
----
-
-# 🔮 Future Scope
-
-* Integration of TMDB API for movie posters.
-* User authentication system.
-* Personalized watchlists.
-* Sentiment analysis on movie reviews.
-* Cloud deployment.
-* Hybrid recommendation models.
-* Deep learning-based recommendation systems.
-* Mobile application integration.
-
----
-
-# 👨‍💻 Author
+## 👨‍💻 Author
 
 **Sagar Raj Sharma**
+
+**Roll Number:** 24052503
+
+**B.Tech Computer Science and Engineering**
+
+**KIIT University**
 
 **GitHub:** https://github.com/sagar0149
 
 ---
+
+## 📜 License
+
+This project is developed for academic and educational purposes only.
